@@ -12,7 +12,7 @@ defmodule ElixirBenchmark.Mixfile do
   def application do
     [
       mod: { ElixirBenchmark, [] },
-      applications: [:phoenix]
+      applications: [:phoenix, :jazz, :cowboy, :erlcloud, :json, :amnesia, :exrm, :datastructures, :exquisite, :continuum, :ex_conf, :mix, :inflex]
     ]
   end
 
@@ -26,6 +26,10 @@ defmodule ElixirBenchmark.Mixfile do
       {:phoenix, "0.2.4"},
       {:jazz, github: "meh/jazz", ref: "7af3b74e58eb1a3fc6b9874a2077efa420f6dfcc"},
       {:cowboy, github: "extend/cowboy", override: true, ref: "05024529679d1d0203b8dcd6e2932cc2a526d370"},
+      {:erlcloud,github: "gleber/erlcloud"},
+      { :json,  github: "cblage/elixir-json" },
+      { :amnesia, github: "uriagassi/amnesia" },
+      { :exrm, "~> 0.8.1"}
     ]
   end
 end

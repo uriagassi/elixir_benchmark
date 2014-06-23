@@ -3,4 +3,5 @@ defmodule ElixirBenchmark.Router do
 
   plug Plug.Static, at: "/static", from: :elixir_benchmark
   get "/", ElixirBenchmark.Controllers.Pages, :index, as: :page
+  post "/sell", ElixirBenchmark.Controllers.Pages, :sell
 end
